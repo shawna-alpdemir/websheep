@@ -71,7 +71,7 @@
     "passport-cookie": "^1.0.6",
     "passport-http-bearer": "^1.0.1",
     "pbkdf2": "^3.0.17",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.6.7",
     "shortid": "^2.2.15",
     "swagger-ui-express": "^4.1.2",
     "yamljs": "^0.3.0",
