@@ -37,7 +37,9 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "_vercel:websheep": "cp apps/websheep/vercel.json dist/apps/websheep && vercel dist/apps/websheep",
-    "_vercel:websheep-api": "vercel --local-config apps/websheep-api/vercel.json"
+    "_vercel:websheep-api": "vercel --local-config apps/websheep-api/vercel.json",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -75,7 +77,8 @@
     "shortid": "^2.2.15",
     "swagger-ui-express": "^4.1.2",
     "yamljs": "^0.3.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.900.0-next.11",
@@ -107,5 +110,6 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "snyk": true
 }
